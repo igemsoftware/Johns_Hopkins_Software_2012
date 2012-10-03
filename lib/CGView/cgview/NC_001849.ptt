@@ -1,0 +1,26 @@
+Borrelia burgdorferi B31 plasmid lp17, complete sequence - 0..16823
+23 proteins
+       Location		Strand	Length	PID	Gene	Synonym	Code	COG	Product
+      332..805      	 +	157	11496586	-	BBD01	-	-	conserved hypothetical protein	
+      873..1022     	 +	49	11496599	-	BBD02	-	-	B. burgdorferi predicted coding region BBD02	
+     1117..1221     	 +	34	11496598	-	BBD03	-	-	B. burgdorferi predicted coding region BBD03	
+     1412..1768     	 +	118	11496585	-	BBD04	-	-	conserved hypothetical protein	
+     2389..2544     	 +	51	11496584	-	BBD05	-	-	conserved hypothetical protein	
+     3143..3607     	 +	154	11496596	-	BBD06	-	-	conserved hypothetical protein	
+     4257..4373     	 -	38	11496606	-	BBD07	-	-	B. burgdorferi predicted coding region BBD07	
+     4707..4805     	 +	32	11496605	-	BBD08	-	-	B. burgdorferi predicted coding region BBD08	
+     5058..5741     	 +	227	11496595	-	BBD09	-	-	conserved hypothetical protein	
+     5876..6454     	 -	192	11496594	-	BBD10	-	-	conserved hypothetical protein	
+     6681..7634     	 +	317	11496593	-	BBD11	-	-	conserved hypothetical protein	
+     7621..7752     	 -	43	11496604	-	BBD12	-	-	B. burgdorferi predicted coding region BBD12	
+     7787..8113     	 +	108	11496592	-	BBD13	-	-	conserved hypothetical protein	
+     8269..9381     	 +	370	11496591	-	BBD14	-	-	conserved hypothetical protein	
+     9593..10015    	 -	140	11496590	-	BBD15	-	-	conserved hypothetical protein	
+    10425..10520    	 -	31	11496603	-	BBD16	-	-	B. burgdorferi predicted coding region BBD16	
+    10591..10686    	 +	31	11496601	-	BBD17	-	-	B. burgdorferi predicted coding region BBD17	
+    10986..11648    	 -	220	11496588	-	BBD18	-	-	conserved hypothetical protein	
+    12057..12170    	 +	37	11496600	-	BBD19	-	-	B. burgdorferi predicted coding region BBD19	
+    13341..14081    	 +	246	11496587	-	BBD21	D	COG1192	conserved hypothetical protein	
+    14072..14341    	 +	89	11496589	-	BBD22	-	-	conserved hypothetical protein	
+    15891..16121    	 -	76	11496597	-	BBD24	-	-	conserved hypothetical protein	
+    16212..16370    	 +	52	11496602	-	BBD25	-	-	B. burgdorferi predicted coding region BBD25	
