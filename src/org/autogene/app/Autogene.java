@@ -4,7 +4,18 @@
  */
 package org.autogene.app;
 
+import java.io.*;
+import java.net.URI;
+import java.net.URL;
+import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.swing.JOptionPane;
+import org.autogene.core.bio.managers.FeatureManager;
+import org.autogene.core.bio.managers.InitialSetUpWindow;
+import org.autogene.core.bio.managers.Master;
 import org.autogene.ui.main.AutogeneFrame;
+
 
 /**
  *
@@ -16,6 +27,8 @@ public class Autogene {
      * @param args the command line arguments
      */
     public static void main(String args[]) {
+    	
+    	JOptionPane.showMessageDialog(null, new File(".").getAbsolutePath());
         /*
          * Set the Nimbus look and feel
          */
@@ -49,8 +62,51 @@ public class Autogene {
         java.awt.EventQueue.invokeLater(new Runnable() {
 
             public void run() {
-                new AutogeneFrame().setVisible(true);
-            }
+            	
+                try {
+                /*   InputStreamReader isReader= 
+                      new InputStreamReader(
+                          Master.class.getResourceAsStream("/org/autogene/core/bio/managers/Properties.prop"));
+                    BufferedReader br = new BufferedReader(isReader); 
+                    InputStream resourceAsStream = Master.class.getResourceAsStream("/org/autogene/core/bio/managers/Properties.prop");
+                
+                */
+               
+                System.out.println("wrote!");
+                } catch (Exception ex) {
+                    ex.printStackTrace();
+                }
+
+                
+                Master mas = new Master();
+                if(mas.propertiesFileExists()) {
+                    new AutogeneFrame().setVisible(true);
+                } else {
+                    InitialSetUpWindow ini = new InitialSetUpWindow();
+                    ini.setVisible(true);
+                }
+                    
+                    //Master.createTable();
+                
+                //new FeatureManager();
+                System.out.println("done calling feature manager");
+                /*try {
+                    System.out.println("caling set up");
+                    Master.setupDatabase();
+                } catch (SQLException ex) {
+                    JOptionPane.showMessageDialog(null,ex.toString());
+                }
+                
+                try {
+                   // getClass().getResource("/org/autogene/ui/resources/images/Regulatory_forward.png");
+                } catch(Exception e) { 
+                    //e.printStackTrace();
+                    //System.exit(1);
+                }*/
+                }
+                
+              
+            
         });
     }
     

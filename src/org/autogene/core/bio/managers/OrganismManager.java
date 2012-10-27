@@ -20,7 +20,9 @@ public class OrganismManager {
     private EntityManagerFactory emf;
     
     public OrganismManager() {
-        emf = Persistence.createEntityManagerFactory("autogenePU");
+        //emf = Persistence.createEntityManagerFactory("autogenePU");
+                emf = Master.getEntityManager();
+
     }
     
     public List<Organism> findAll() {

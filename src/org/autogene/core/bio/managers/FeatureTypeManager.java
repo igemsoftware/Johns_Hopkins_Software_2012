@@ -21,7 +21,9 @@ public class FeatureTypeManager {
     private EntityManagerFactory emf;
 
     public FeatureTypeManager() {
-        emf = Persistence.createEntityManagerFactory("autogenePU");
+        //emf = Persistence.createEntityManagerFactory("autogenePU");
+                emf = Master.getEntityManager();
+
     }
     
     public List<FeatureType> findAll(){

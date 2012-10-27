@@ -4,7 +4,9 @@
  */
 package org.autogene.core.bio.managers;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
@@ -20,9 +22,13 @@ import org.autogene.core.bio.entities.FeatureType;
 public class FeatureManager {
 
     private EntityManagerFactory emf;
+    
+    
 
     public FeatureManager() {
-        emf = Persistence.createEntityManagerFactory("autogenePU");
+        System.out.println("OMGGin");
+        //emf = Persistence.createEntityManagerFactory("autogenePU");
+        emf = Master.getEntityManager();
     }
     
     public List<Feature> findAll(){

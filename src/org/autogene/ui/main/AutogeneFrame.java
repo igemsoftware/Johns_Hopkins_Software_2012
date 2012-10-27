@@ -178,7 +178,6 @@ public class AutogeneFrame extends javax.swing.JFrame {
         viewLogMenuItem = new javax.swing.JMenuItem();
         cgviewDemoMenuItem = new javax.swing.JMenuItem();
         helpMenu = new javax.swing.JMenu();
-        contentsMenuItem = new javax.swing.JMenuItem();
         aboutMenuItem = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -575,12 +574,8 @@ public class AutogeneFrame extends javax.swing.JFrame {
         helpMenu.setMnemonic('h');
         helpMenu.setText("Help");
 
-        contentsMenuItem.setMnemonic('c');
-        contentsMenuItem.setText("Contents");
-        helpMenu.add(contentsMenuItem);
-
         aboutMenuItem.setMnemonic('a');
-        aboutMenuItem.setText("About");
+        aboutMenuItem.setText("Help");
         helpMenu.add(aboutMenuItem);
 
         menuBar.add(helpMenu);
@@ -824,7 +819,6 @@ public class AutogeneFrame extends javax.swing.JFrame {
     private javax.swing.JButton annotateButton;
     private javax.swing.JMenuItem cgviewDemoMenuItem;
     private javax.swing.JButton clearLogButton;
-    private javax.swing.JMenuItem contentsMenuItem;
     private javax.swing.JButton deletePlasmidButton;
     private javax.swing.JDesktopPane desktopPane;
     private javax.swing.JButton detailsButton;

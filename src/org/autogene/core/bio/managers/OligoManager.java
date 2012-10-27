@@ -20,7 +20,9 @@ import org.autogene.core.bio.entities.Oligo;
 public class OligoManager {
     private EntityManagerFactory emf;
     public OligoManager() {
-        emf = Persistence.createEntityManagerFactory("autogenePU");
+       // emf = Persistence.createEntityManagerFactory("autogenePU");
+                emf = Master.getEntityManager();
+
     }
     
     public List<Oligo> findAll() {

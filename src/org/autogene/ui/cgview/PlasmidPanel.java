@@ -5,6 +5,7 @@
 package org.autogene.ui.cgview;
 
 import java.awt.Color;
+import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.event.MouseEvent;
@@ -87,7 +88,7 @@ public class PlasmidPanel extends javax.swing.JPanel implements MouseListener, M
              cgview.setWidth(getWidth());
             cgview.setHeight(getHeight());
             cgview.setBackboneRadius(Math.min(getWidth(),getHeight())*0.28);
-	
+            cgview.setTitleFont(new Font("Georgia",Font.PLAIN,16));
             //updateCgviewSize();
             cgview.draw((Graphics2D)g);
             previousWidth = homePanel.getWidth();

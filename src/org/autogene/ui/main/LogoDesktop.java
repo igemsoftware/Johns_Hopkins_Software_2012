@@ -24,11 +24,15 @@ public class LogoDesktop extends JDesktopPane {
     public LogoDesktop() {
         super();
         try {
+         //  File f = getClass().getResource("/org/autogene/ui/resources/images/qc.png");
+          // new javax.swing.ImageIcon(getClass().getResource("/org/autogene/ui/resources/images/qc.png")).getImage();
             //Resource r = getClass().getResource("/org/autogene/ui/resources/images/green-bullet.png");
-            img = ImageIO.read(new File("/Users/Robert/Desktop/autogenelogo2.png"));
+            img = ImageIO.read(getClass().getResource("/org/autogene/ui/resources/images/autogenelogo2.png"));
+
              // img = ImageIO.read(new File("/Users/Robert/Desktop/iGEMDesignIcons/autogenelogo_plasmid_bw.png"));
 
-            back = ImageIO.read(new File("/Users/Robert/Desktop/iGEMDesignIcons/autogene_blueprint.png"));
+           // back = ImageIO.read(new File("/Users/Robert/Desktop/iGEMDesignIcons/autogene_blueprint.png"));
+            back = ImageIO.read(getClass().getResource("/org/autogene/ui/resources/images/autogene_blueprint.png"));
             //new ImageIcon(getClass().getResource("/org/autogene/ui/resources/images/red-bullet.png"));
             //new ImageIcon(getClass().getResource("/org/autogene/ui/resources/images/autogenelogo.png"));
 

@@ -20,7 +20,9 @@ public class PlasmidManager {
     private EntityManagerFactory emf;
 
     public PlasmidManager() {
-        emf = Persistence.createEntityManagerFactory("autogenePU");
+        //emf = Persistence.createEntityManagerFactory("autogenePU");
+                emf = Master.getEntityManager();
+
     }
     
     public List<Plasmid> findAll(){

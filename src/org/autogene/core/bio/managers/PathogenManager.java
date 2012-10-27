@@ -22,7 +22,9 @@ public class PathogenManager {
     private EntityManagerFactory emf;
     
     public PathogenManager() {
-         emf = Persistence.createEntityManagerFactory("autogenePU");
+       //  emf = Persistence.createEntityManagerFactory("autogenePU");
+                 emf = Master.getEntityManager();
+
     }
     public List<Pathogen> findAll(){
         EntityManager em = emf.createEntityManager();

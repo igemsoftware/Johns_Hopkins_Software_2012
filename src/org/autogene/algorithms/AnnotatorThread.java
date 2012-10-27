@@ -81,7 +81,7 @@ public class AnnotatorThread implements Runnable {
        
         
         //find oligo matches
-        OligoMatcher om = new OligoMatcher(plasmid.getSequence());
+       /* OligoMatcher om = new OligoMatcher(plasmid.getSequence());
         //ArrayList<OligoMatch> omm = om.findOligos();
         om.findOligos();
                 ArrayList<OligoMatch> omm = om.matches;
@@ -89,7 +89,7 @@ public class AnnotatorThread implements Runnable {
         System.out.println("FOUND OLIGOS: " + omm);
 
         plasmid.setOligoMatches(omm);
-         
+         */
         plasmid.setIsAnnotating(false);
         autogeneFrame.updatePlasmidList();
 
