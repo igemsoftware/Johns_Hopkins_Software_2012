@@ -1,3 +1,5 @@
-Autogene
+Autogene - made for iGEM 2012 by the Johns Hopkins University Software Team
 
-*View detailed download instructions at [source of this content]http://ugrad.cs.jhu.edu/~eisinger/iGEM/Download.html).*
+Download instructions are available at http://ugrad.cs.jhu.edu/~eisinger/iGEM/Download.html
+
+Email us at jhuAutogene@gmail.com
