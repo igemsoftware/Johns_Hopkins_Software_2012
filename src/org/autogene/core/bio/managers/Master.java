@@ -112,7 +112,7 @@ public class Master {
     
     public boolean propertiesFileExists() {
         try {
-            JOptionPane.showMessageDialog(null, "found properties file");
+           // JOptionPane.showMessageDialog(null, "found properties file");
             BufferedReader br = new BufferedReader(new FileReader(new File(".").getAbsolutePath() + "/prop/Properties.prop")); 
             //File f = new File(ClassLoader.getSystemResource("/org/autogene/core/bio/managers/Properties.prop").toURI());
             //BufferedReader br = new BufferedReader(new FileReader(f));
@@ -296,7 +296,7 @@ public class Master {
             System.out.println(sb.toString());
         }
         
-                    JOptionPane.showMessageDialog(null,"done running");
+                    JOptionPane.showMessageDialog(null,"The databases have finished initializing!");
 
 
     }

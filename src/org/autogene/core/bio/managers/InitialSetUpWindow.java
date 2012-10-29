@@ -204,7 +204,7 @@ public class InitialSetUpWindow extends JFrame{
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         try {
-            openWebpage(new URL("http://2012.igem.org/Team:Johns_Hopkins-Software/DownloadInstructions"));
+            openWebpage(new URL("http://ugrad.cs.jhu.edu/~eisinger/iGEM/Download.html"));
         } catch (MalformedURLException ex) {
             Logger.getLogger(InitialSetUpWindow.class.getName()).log(Level.SEVERE, null, ex);
         }

@@ -28,7 +28,7 @@ public class Autogene {
      */
     public static void main(String args[]) {
     	
-    	JOptionPane.showMessageDialog(null, new File(".").getAbsolutePath());
+    	//JOptionPane.showMessageDialog(null, new File(".").getAbsolutePath());
         /*
          * Set the Nimbus look and feel
          */
